@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/nfllblue"
+    android:focusable="false"
+    android:clickable="false"
+    android:padding="0dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pick a team to add their schedule to your Android calendar"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/teamlistview"
+            android:padding="8dp"/>
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamlistview"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/listviewoutline"
+            android:clickable="false"
+            android:padding="10dp"
+            android:longClickable="false"
+            android:isScrollContainer="false"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/title2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginTop="15dip"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/balckbar2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+</RelativeLayout>
